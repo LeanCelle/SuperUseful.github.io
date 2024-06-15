@@ -12,7 +12,6 @@ body {
   font-weight: bold;
   margin: 0;
   color: #333;
-  position: fixed;
   top: 0;
   width: 100%;
   background: rgb(171,225,223);
@@ -33,7 +32,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: white;
-  position: fixed;
+  position: fixed ;
   bottom: 0;
   width: 85%;
   padding: 10px 20px; /* Ajuste de padding para espaciado interno */
@@ -58,16 +57,6 @@ body {
   margin: 0 10px;
 }
 
-.mobile-navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.mobile-navbar ul li a:hover {
-  color: #ccc;
-}
-
 /* Estilos para la sección de productos */
 .product-section {
   height: 100vh; /* La altura completa de la ventana */
@@ -76,6 +65,7 @@ body {
 }
 
 .card {
+  margin: 20px;
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
@@ -85,15 +75,12 @@ body {
 /* Estilos para los productos */
 .product {
   background-color:#cccccc75;
-  height: 100vh; /* Cada producto toma la altura completa de la ventana */
   display: flex;
   flex-direction: column; /* Cambia la dirección del flex a columna */
   justify-content: center;
   align-items: center;
   scroll-snap-align: start; /* Alineación del snap */
   transition: opacity 0.5s ease; /* Transición suave para el cambio de productos */
-
-  /* Estilos específicos para móvil */
 }
 
 .carousel {
@@ -104,6 +91,7 @@ body {
 }
 
 .productImg {
+  width: 100%;
   display: block; /* Para asegurar que la imagen se muestre como un bloque */
   margin: auto; /* Auto en ambos lados para centrar horizontalmente */
   height: auto; /* Altura automática para mantener la proporción */
@@ -145,6 +133,7 @@ body {
   font-size: 1em; /* Tamaño de fuente estándar */
   font-weight: bold; /* Texto en negrita */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  cursor: pointer;
 }
 .invisibleP {
   width: 33.33%;
@@ -158,22 +147,4 @@ body {
 
 .amazonIcon {
   width: 33.33%;
-}
-
-.buyButton:hover {
-  background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
-  transform: translateY(-2px); /* Efecto de elevación */
-}
-
-.buyButton:active {
-  background-color: #004080; /* Azul aún más oscuro al hacer clic */
-  transform: translateY(0); /* Sin efecto de elevación */
-}
-
-/* Media query para móviles */
-@media (max-width: 768px) {
-  .productImg {
-    width: 50px;
-    height: 50px;
-  }
 }

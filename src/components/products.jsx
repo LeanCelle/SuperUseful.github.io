@@ -67,7 +67,7 @@ function Products() {
             <h3 className="productName">{product.name}</h3>
             <Carousel>
               <Carousel.Item className='carousel'>
-                <img src={product.image} alt={product.name} className='productImg'/>
+                <img className='productImg' src="https://m.media-amazon.com/images/I/81cONOek27L._AC_SL1500_.jpg" alt="" />
               </Carousel.Item>
               <Carousel.Item>
                 <img src={product.image} alt={product.name} className='productImg'/>
