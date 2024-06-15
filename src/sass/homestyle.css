@@ -8,6 +8,7 @@ body {
 
 /* Estilos para el encabezado */
 .header {
+  position: sticky;
   font-size: 20px;
   font-weight: bold;
   margin: 0;
@@ -15,7 +16,10 @@ body {
   top: 0;
   width: 100%;
   background: rgb(171,225,223);
-  background: linear-gradient(180deg, rgba(171,225,223,1) 25%, rgba(252,191,213,1) 70%);
+  background: -moz-linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
+  background: -webkit-linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
+  background: linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abe1df",endColorstr="#fcbfd5",GradientType=1);
   padding: 20px 0;
   text-align: center;
   z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
@@ -65,7 +69,7 @@ body {
 }
 
 .card {
-  margin: 20px;
+  margin: 80px;
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
@@ -126,7 +130,10 @@ body {
   gap: 20px;
   padding: 12px 24px;
   background: rgb(171,225,223);
-  background: linear-gradient(180deg, rgba(171,225,223,1) 25%, rgba(252,191,213,1) 70%);
+  background: -moz-linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
+  background: -webkit-linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
+  background: linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abe1df",endColorstr="#fcbfd5",GradientType=1);
   color: #090909;
   border: none;
   border-radius: 25px; /* Bordes redondeados */
