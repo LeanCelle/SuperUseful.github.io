@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0; /* Elimina márgenes predeterminados */
+}
+
+/* Estilos para el encabezado */
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(171,225,223);
+  background: linear-gradient(180deg, rgba(171,225,223,1) 25%, rgba(252,191,213,1) 70%);
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+  font-family: "Caveat", cursive;
+}
+
+/* Estilos para la barra de navegación móvil */
+.div-mobile-navbar {
+  display: flex;
+  justify-content: center;
+  margin: auto 0px;
+}
+.mobile-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 85%;
+  padding: 10px 20px; /* Ajuste de padding para espaciado interno */
+  margin: 0px 0px 5px 0px;
+  z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+  border-radius: 20px; /* Borde redondeado */
+}
+
+
+.mobile-navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 35px;
+  text-align: center;
+}
+
+.mobile-navbar ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.mobile-navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-navbar ul li a:hover {
+  color: #ccc;
+}
+
+/* Estilos para la sección de productos */
+.product-section {
+  height: 100vh; /* La altura completa de la ventana */
+  overflow-y: scroll; /* Permite el scroll vertical */
+  scroll-snap-type: y mandatory; /* Scroll snap vertical obligatorio */
+}
+
+.card {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(198, 33, 33, 0.1);
+}
+
+/* Estilos para los productos */
+.product {
+  background-color:#cccccc75;
+  height: 100vh; /* Cada producto toma la altura completa de la ventana */
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del flex a columna */
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; /* Alineación del snap */
+  transition: opacity 0.5s ease; /* Transición suave para el cambio de productos */
+
+  /* Estilos específicos para móvil */
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+}
+
+.productImg {
+  display: block; /* Para asegurar que la imagen se muestre como un bloque */
+  margin: auto; /* Auto en ambos lados para centrar horizontalmente */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+
+.productName {
+  color: #333; /* Color más oscuro para un aspecto más profesional */
+  font-size: 16px; /* Tamaño de fuente ligeramente mayor */
+  font-weight: bold; /* Texto en negrita */
+  font-family: "Urbanist", sans-serif;
+}
+
+.productPrice {
+  margin: 20px 0px 10px 0px;
+  font-weight: bold;
+  font-size: 12px; /* Tamaño de fuente estándar */
+  font-family: "Urbanist", sans-serif;
+}
+
+.productOpinion {
+  font-size: 10px;
+  color: #666;
+  font-family: "Urbanist", sans-serif;
+}
+
+/* Estilos mejorados para el botón de compra */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+  background: rgb(171,225,223);
+  background: linear-gradient(180deg, rgba(171,225,223,1) 25%, rgba(252,191,213,1) 70%);
+  color: #090909;
+  border: none;
+  border-radius: 25px; /* Bordes redondeados */
+  font-size: 1em; /* Tamaño de fuente estándar */
+  font-weight: bold; /* Texto en negrita */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.invisibleP {
+  width: 33.33%;
+}
+
+.buyButton {
+  width: 33.33%;
+  margin: 0px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.amazonIcon {
+  width: 33.33%;
+}
+
+.buyButton:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.buyButton:active {
+  background-color: #004080; /* Azul aún más oscuro al hacer clic */
+  transform: translateY(0); /* Sin efecto de elevación */
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+  .productImg {
+    width: 50px;
+    height: 50px;
+  }
+}

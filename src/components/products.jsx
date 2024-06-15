@@ -1,0 +1,94 @@
+import React, { useState, useEffect, useRef } from 'react';
+import '../sass/homestyle.css'; // Ajusta la ruta según tu estructura de archivos
+import Carousel from 'react-bootstrap/Carousel';
+import { FaAmazon } from "react-icons/fa";
+import Rating from '@mui/material/Rating'; // Importa el componente Rating de Material-UI
+
+function Products() {
+  const [products, setProducts] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    // Función para generar productos ficticios
+    const generateFakeProducts = () => {
+      const newProducts = [];
+      for (let i = 1; i <= 10; i++) {
+        newProducts.push({
+          id: i,
+          name: `Product ${i}`,
+          price: `$${Math.floor(Math.random() * 100) + 1}`,
+          rating: 4.5, // Rating ficticio entre 1 y 5
+          image: `${process.env.PUBLIC_URL}/img/favicon.ico` // Ruta correcta a la imagen en el directorio public/img
+        });
+      }
+      return newProducts;
+    };
+
+    // Genera productos ficticios iniciales
+    setProducts(generateFakeProducts());
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const container = containerRef.current;
+      const scrollTop = container.scrollTop;
+      const containerHeight = container.clientHeight;
+      const productHeight = container.scrollHeight / products.length;
+
+      if (scrollTop > currentIndex * productHeight + containerHeight / 2) {
+        setCurrentIndex(prevIndex => Math.min(prevIndex + 1, products.length - 1));
+      } else if (scrollTop < currentIndex * productHeight - containerHeight / 2) {
+        setCurrentIndex(prevIndex => Math.max(prevIndex - 1, 0));
+      }
+    };
+
+    const container = containerRef.current;
+    container.addEventListener('scroll', handleScroll);
+
+    return () => {
+      container.removeEventListener('scroll', handleScroll);
+    };
+  }, [currentIndex, products]);
+
+  const handleBuy = (product) => {
+    alert(`Compraste ${product.name} por ${product.price}`);
+  };
+
+  return (
+    <div className="product-section" ref={containerRef}>
+      {products.map((product, index) => (
+        <div
+          key={product.id}
+          className={`product ${index === currentIndex ? 'current' : ''}`}
+          style={{ scrollSnapAlign: 'start' }}
+        >
+          <div className='card'>
+            <h3 className="productName">{product.name}</h3>
+            <Carousel>
+              <Carousel.Item className='carousel'>
+                <img src={product.image} alt={product.name} className='productImg'/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={product.image} alt={product.name} className='productImg'/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={product.image} alt={product.name} className='productImg'/>
+              </Carousel.Item>
+            </Carousel>
+            <p className="productPrice">Price: {product.price}</p>
+            <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly /> {/* Rating de Material-UI */}
+            <p className="productOpinion">"The product I use changed my life"</p>
+            <div className='buttonContainer'>
+              <p className='invisibleP'></p>
+              <p className="buyButton" onClick={() => handleBuy(product)}>Buy Now</p>
+              <FaAmazon className='amazonIcon'/>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default Products;
