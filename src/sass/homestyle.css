@@ -1,15 +1,14 @@
 @charset "UTF-8";
 /* Estilos para el cuerpo de la página */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Caveat", cursive;
   background-color: black;
   margin: 0; /* Elimina márgenes predeterminados */
-  overflow-y: hidden;
 }
 
 /* Estilos para el encabezado */
 .header {
-  position: sticky;
+  position: fixed;
   font-size: 20px;
   font-weight: bold;
   margin: 0;
@@ -31,7 +30,7 @@ body {
 .div-mobile-navbar {
   display: flex;
   justify-content: center;
-  margin: auto 0px;
+  margin: 0px;
 }
 .mobile-navbar {
   display: flex;
@@ -70,7 +69,7 @@ body {
 }
 
 .card {
-  margin: 20px 0px 80px 0px;
+  margin: 80px 0px 80px 0px;
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
