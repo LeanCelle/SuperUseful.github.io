@@ -65,7 +65,7 @@ function Products() {
         >
           <div className='card'>
             <h3 className="productName">{product.name}</h3>
-            <Carousel>
+            <Carousel prevIcon={null} nextIcon={null} interval={null}>
               <Carousel.Item className='carousel'>
                 <img className='productImg' src="https://m.media-amazon.com/images/I/81cONOek27L._AC_SL1500_.jpg" alt="" />
               </Carousel.Item>
