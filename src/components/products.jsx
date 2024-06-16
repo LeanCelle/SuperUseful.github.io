@@ -77,7 +77,8 @@ function Products() {
               </Carousel.Item>
             </Carousel>
             <p className="productPrice">Price: {product.price}</p>
-            <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly /> {/* Rating de Material-UI */}
+            <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly className="productRating"/>
+            {/* Rating de Material-UI con clase productRating */}
             <p className="productOpinion">"The product I use changed my life"</p>
             <div className='buttonContainer'>
               <p className='invisibleP'></p>

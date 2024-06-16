@@ -7,23 +7,19 @@
 }
 
 /* Estilos para el encabezado */
-.headerContainer {
-  height: 13vh; /* La altura completa de la ventana */
-  margin: 0px;
-}
 
 .header {
   font-size: 20px;
   font-weight: bold;
   color: #333;
-  margin: 0;
+  margin: 0px 0px 5px 0px;
   width: 100%;
   background: rgb(171,225,223);
   background: -moz-linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
   background: -webkit-linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
   background: linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abe1df",endColorstr="#fcbfd5",GradientType=1);
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
   font-family: "Caveat", cursive;
 }
@@ -65,7 +61,7 @@
 
 /* Estilos para la sección de productos */
 .product-section {
-  height: 87vh; /* La altura completa de la ventana */
+  height: 90vh; /* La altura completa de la ventana */
   overflow-y: scroll; /* Permite el scroll vertical */
   scroll-snap-type: y mandatory; /* Scroll snap vertical obligatorio */
 }
@@ -82,11 +78,11 @@
 }
 
 .card {
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 80px 0px;
   padding: 15px;
   background-color: #fff;
-  border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(198, 33, 33, 0.1);
+  border-radius: 10%;
 }
 
 .carousel {
@@ -107,7 +103,7 @@
 
 .productName {
   color: #333; /* Color más oscuro para un aspecto más profesional */
-  font-size: 16px; /* Tamaño de fuente ligeramente mayor */
+  font-size: 18px; /* Tamaño de fuente ligeramente mayor */
   font-weight: bold; /* Texto en negrita */
   font-family: "Urbanist", sans-serif;
 }
@@ -157,4 +153,8 @@
 
 .amazonIcon {
   width: 33.33%;
+}
+
+.productRating {
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3)); /* Sombra ligera */
 }
