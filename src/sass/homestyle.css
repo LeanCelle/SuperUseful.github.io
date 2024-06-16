@@ -8,7 +8,7 @@
 
 /* Estilos para el encabezado */
 .headerContainer {
-  height: 14vh; /* La altura completa de la ventana */
+  height: 13vh; /* La altura completa de la ventana */
   margin: 0px;
 }
 
@@ -67,7 +67,7 @@
 
 /* Estilos para la sección de productos */
 .product-section {
-  height: 86vh; /* La altura completa de la ventana */
+  height: 87vh; /* La altura completa de la ventana */
   overflow-y: scroll; /* Permite el scroll vertical */
   scroll-snap-type: y mandatory; /* Scroll snap vertical obligatorio */
 }
@@ -84,7 +84,7 @@
 }
 
 .card {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
