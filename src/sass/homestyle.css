@@ -15,14 +15,13 @@
   font-weight: bold;
   color: #333;
   width: 100%;
-  background: rgb(171, 225, 223);
-  background: -moz-linear-gradient(180deg,rgba(171, 225, 223, 0.22937097202162116) 50%,rgba(252, 191, 213, 0.23217209246980042) 74%);
-  background: -webkit-linear-gradient(180deg,rgba(171, 225, 223, 0.22937097202162116) 50%,rgba(252, 191, 213, 0.23217209246980042) 74%);
-  background: linear-gradient(180deg,rgba(171, 225, 223, 0.22937097202162116) 50%,rgba(252, 191, 213, 0.23217209246980042) 74%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abe1df",endColorstr="#fcbfd5",GradientType=1);
+  background: rgb(236,253,255);
+  background: -moz-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: -webkit-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecfdff",endColorstr="#fff2f7",GradientType=1);
   padding: 10px 0;
   text-align: center;
-  position: fixed;
   font-family: "Caveat", cursive;
   z-index: 1000;
 }
@@ -72,7 +71,6 @@
 /* Estilos para la sección de productos */
 .product-section {
   height: 100vh;
-  padding: 10vh 0vw;
   overflow-y: scroll; /* Permite el scroll vertical */
   scroll-snap-type: y mandatory; /* Scroll snap vertical obligatorio */
   scroll-behavior: smooth; /* Scroll suave */
@@ -90,7 +88,7 @@
 }
 
 .card {
-  margin: 0px 0px 60px 0px;
+  margin: 0px 0px 30px 0px;
   padding: 15px;
   background-color: #fff;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta el tamaño y la intensidad de la sombra */
