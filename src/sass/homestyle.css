@@ -1,17 +1,16 @@
 @charset "UTF-8";
 /* Estilos para el cuerpo de la página */
-body {
-  font-family: "Caveat", cursive;
-  background-color: black;
+.body {
+  font-family: "Urbanist", sans-serif;
+  background-color:#f8f8f8;
   margin: 0; /* Elimina márgenes predeterminados */
 }
 
 /* Estilos para el encabezado */
 .header {
-  position: fixed;
   font-size: 20px;
   font-weight: bold;
-  margin: 0;
+  margin: 0px 0px 20px 0px;
   color: #333;
   top: 0;
   width: 100%;
@@ -39,6 +38,7 @@ body {
   position: fixed ;
   bottom: 0;
   width: 85%;
+  margin: 5px 0px;
   padding: 10px 20px; /* Ajuste de padding para espaciado interno */
   z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave: desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
@@ -67,23 +67,23 @@ body {
   scroll-snap-type: y mandatory; /* Scroll snap vertical obligatorio */
 }
 
-.card {
-  margin: 80px 0px 0px 0px;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(198, 33, 33, 0.1);
-}
-
 /* Estilos para los productos */
 .product {
-  background-color:#cccccc75;
+  background-color:#f8f8f8;
   display: flex;
   flex-direction: column; /* Cambia la dirección del flex a columna */
   justify-content: center;
   align-items: center;
   scroll-snap-align: start; /* Alineación del snap */
   transition: opacity 0.5s ease; /* Transición suave para el cambio de productos */
+}
+
+.card {
+  margin: 0px 0px 20px 0px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(198, 33, 33, 0.1);
 }
 
 .carousel {
