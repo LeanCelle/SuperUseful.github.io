@@ -13,11 +13,9 @@
 }
 
 .header {
-  position: sticky;
   font-size: 20px;
   font-weight: bold;
   color: #333;
-  top: 0;
   margin: 0;
   width: 100%;
   background: rgb(171,225,223);
@@ -27,7 +25,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abe1df",endColorstr="#fcbfd5",GradientType=1);
   padding: 20px 0;
   text-align: center;
-  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
   font-family: "Caveat", cursive;
 }
 
@@ -85,7 +82,7 @@
 }
 
 .card {
-  margin-bottom: 50px;
+  margin: 0px 0px 50px 0px;
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
