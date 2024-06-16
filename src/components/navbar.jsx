@@ -8,16 +8,16 @@ import { CiUser } from "react-icons/ci";
 function Navbar() {
   return (
     <>
-    <div className="div-mobile-navbar">
-      <nav className="mobile-navbar">
-        <ul>
-          <li><GoHome /></li>
-          <li><CiSearch /></li>
-          <li><BiBookmark /></li>
-          <li><CiUser /></li>
-        </ul>
-      </nav>
-    </div>
+      <div className="div-mobile-navbar">
+        <nav className="mobile-navbar">
+          <ul>
+            <li className="nav-item"><GoHome /></li>
+            <li className="nav-item"><CiSearch /></li>
+            <li className="nav-item"><BiBookmark /></li>
+            <li className="nav-item"><CiUser /></li>
+          </ul>
+        </nav>
+      </div>
     </>
   );
 }
