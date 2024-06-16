@@ -8,6 +8,10 @@
 }
 
 /* Estilos para el encabezado */
+.headerContainer {
+  overflow: hidden;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -88,18 +92,13 @@
 }
 
 .card {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 60px 0px;
   padding: 15px;
   background-color: #fff;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta el tamaño y la intensidad de la sombra */
   border-radius: 15px; /* Aumenta el radio del borde para hacerlo más redondeado */
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-}
-
-.card:hover {
-  transform: translateY(-5px); /* Efecto de levantamiento al pasar el mouse */
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el mouse */
 }
 
 .carousel {
@@ -144,27 +143,11 @@
   align-items: center;
   gap: 20px;
   padding: 12px 24px;
-  background: rgb(171, 225, 223);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(171, 225, 223, 0.22937097202162116) 50%,
-    rgba(252, 191, 213, 0.23217209246980042) 74%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(171, 225, 223, 0.22937097202162116) 50%,
-    rgba(252, 191, 213, 0.23217209246980042) 74%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(171, 225, 223, 0.22937097202162116) 50%,
-    rgba(252, 191, 213, 0.23217209246980042) 74%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(
-    startColorstr="#abe1df",
-    endColorstr="#fcbfd5",
-    GradientType=1
-  );
+  background: rgb(236,253,255);
+  background: -moz-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: -webkit-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecfdff",endColorstr="#fff2f7",GradientType=1);
   color: #090909;
   border: none;
   border-radius: 25px; /* Bordes redondeados */
@@ -173,11 +156,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-}
-
-.buttonContainer:hover {
-  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
 }
 
 .invisibleP {
