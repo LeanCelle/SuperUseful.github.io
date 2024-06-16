@@ -7,12 +7,17 @@
 }
 
 /* Estilos para el encabezado */
-.header {
+.headerContainer {
+  height: 14vh; /* La altura completa de la ventana */
+  margin: 0px;
+}
+
+.header {  
   font-size: 20px;
   font-weight: bold;
-  margin: 0px 0px 20px 0px;
   color: #333;
   top: 0;
+  margin: 0;
   width: 100%;
   background: rgb(171,225,223);
   background: -moz-linear-gradient(180deg, rgba(171,225,223,0.22937097202162116) 50%, rgba(252,191,213,0.23217209246980042) 74%);
@@ -62,7 +67,7 @@
 
 /* Estilos para la sección de productos */
 .product-section {
-  height: 100vh; /* La altura completa de la ventana */
+  height: 86vh; /* La altura completa de la ventana */
   overflow-y: scroll; /* Permite el scroll vertical */
   scroll-snap-type: y mandatory; /* Scroll snap vertical obligatorio */
 }
@@ -79,7 +84,7 @@
 }
 
 .card {
-  margin: 0px 0px 20px 0px;
+  margin-bottom: 40px;
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;

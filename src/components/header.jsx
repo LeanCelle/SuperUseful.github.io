@@ -4,7 +4,7 @@ import '../sass/homestyle.css'; // Importa los estilos CSS
 function Header() {
   return (
     <>
-      <div>
+      <div className='headerContainer'>
         <h1 className="header">SuperUseful!</h1>
       </div>
     </>
