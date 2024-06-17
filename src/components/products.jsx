@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../sass/homestyle.css'; // Ajusta la ruta según tu estructura de archivos
+import '../sass/homestyle.css';
 import Carousel from 'react-bootstrap/Carousel';
-import { FaAmazon } from "react-icons/fa";
-import Rating from '@mui/material/Rating'; // Importa el componente Rating de Material-UI
+import Rating from '@mui/material/Rating';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -18,8 +17,8 @@ function Products() {
           id: i,
           name: `Product ${i}`,
           price: `$${Math.floor(Math.random() * 100) + 1}`,
-          rating: 4.5, // Rating ficticio entre 1 y 5
-          image: `${process.env.PUBLIC_URL}/img/favicon.ico` // Ruta correcta a la imagen en el directorio public/img
+          rating: 4.5,
+          image: `${process.env.PUBLIC_URL}/img/favicon.ico`
         });
       }
       return newProducts;
@@ -64,7 +63,7 @@ function Products() {
           className={`product ${index === currentIndex ? 'current' : ''}`}
           style={{ scrollSnapAlign: 'start' }}
         >
-          <div className='card'>
+          <div className='cardd'>
             <h3 className="productName">{product.name}</h3>
             <Carousel prevIcon={null} nextIcon={null} interval={null}>
               <Carousel.Item className='carousel'>
@@ -84,7 +83,7 @@ function Products() {
             <div className='buttonContainer'>
               <p className='invisibleP'></p>
               <p className="buyButton" onClick={() => handleBuy(product)}>Buy Now</p>
-              <FaAmazon className='amazonIcon'/>
+              <img src="/img/compras.png" alt="amazon." className='amazonIcon'/>
             </div>
           </div>
         </div>
