@@ -57,44 +57,39 @@ function Products() {
 
   return (
     <>
-      <div className="product-section" ref={containerRef}>
-        {products.map((product, index) => (
-          <div
-            key={product.id}
-            className={`product ${index === currentIndex ? 'current' : ''}`}
-            style={{ scrollSnapAlign: 'start' }}
-          >
-            <div className='card'>
-              <h3 className="productName">{product.name}</h3>
-              <Carousel prevIcon={null} nextIcon={null} interval={null}>
-                <Carousel.Item className='carousel'>
-                  <img className='productImg' src="https://m.media-amazon.com/images/I/81cONOek27L._AC_SL1500_.jpg" alt="" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={product.image} alt={product.name} className='productImg'/>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={product.image} alt={product.name} className='productImg'/>
-                </Carousel.Item>
-              </Carousel>
-              <p className="productPrice">Price: {product.price}</p>
-              <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly className="productRating"/>
-              {/* Rating de Material-UI con clase productRating */}
-              <p className="productOpinion">"The product I use changed my life"</p>
-              <div className='buttonContainer'>
-                <p className='invisibleP'></p>
-                <p className="buyButton" onClick={() => handleBuy(product)}>Buy Now</p>
-                <FaAmazon className='amazonIcon'/>
-              </div>
+    <div className="product-section" ref={containerRef}>
+      {products.map((product, index) => (
+        <div
+          key={product.id}
+          className={`product ${index === currentIndex ? 'current' : ''}`}
+          style={{ scrollSnapAlign: 'start' }}
+        >
+          <div className='card'>
+            <h3 className="productName">{product.name}</h3>
+            <Carousel prevIcon={null} nextIcon={null} interval={null}>
+              <Carousel.Item className='carousel'>
+                <img className='productImg' src="https://m.media-amazon.com/images/I/81cONOek27L._AC_SL1500_.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={product.image} alt={product.name} className='productImg'/>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={product.image} alt={product.name} className='productImg'/>
+              </Carousel.Item>
+            </Carousel>
+            <p className="productPrice">Price: {product.price}</p>
+            <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly className="productRating"/>
+            {/* Rating de Material-UI con clase productRating */}
+            <p className="productOpinion">"The product I use changed my life"</p>
+            <div className='buttonContainer'>
+              <p className='invisibleP'></p>
+              <p className="buyButton" onClick={() => handleBuy(product)}>Buy Now</p>
+              <FaAmazon className='amazonIcon'/>
             </div>
           </div>
-        ))}
-      </div>
-  
-      {/* Pie de página */}
-      <footer className="footer">
-        <p>© 2024 SuperUseful. Todos los derechos reservados.</p>
-      </footer>
+        </div>
+      ))}
+    </div>
     </>
   );
 }
