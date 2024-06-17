@@ -46,7 +46,7 @@
   background-color: white;
   bottom: 0;
   width: 85%;
-  margin: 5px 0px;
+  margin: 8px 0px;
   padding: 10px 20px; /* Ajuste de padding para espaciado interno */
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   border-radius: 20px; /* Borde redondeado */
@@ -68,7 +68,7 @@
 
 /* Estilos para los íconos */
 .nav-item {
-  font-size: 20px; /* Tamaño de fuente para los íconos */
+  font-size: 23px; /* Tamaño de fuente para los íconos */
   cursor: pointer;
   transition: transform 0.3s ease; /* Transición suave para el efecto de escala */
 }
