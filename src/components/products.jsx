@@ -76,8 +76,8 @@ function Products() {
                 <img src={product.image} alt={product.name} className='productImg'/>
               </Carousel.Item>
             </Carousel>
-            <p className="productPrice">Price: {product.price}</p>
-            <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly className="productRating"/>
+            <p className="productPrice">{product.price}</p>
+            <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly className="productRating" size="small"/>
             {/* Rating de Material-UI con clase productRating */}
             <p className="productOpinion">"The product I use changed my life"</p>
             <div className='buttonContainer'>
