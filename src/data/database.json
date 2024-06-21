@@ -1,0 +1,187 @@
+{
+    "products":[
+    {
+      "product_id": 1,
+      "product_name": "Banana Slicer",
+      "affiliate_url": "https://amzn.to/3WkrunS",
+      "image_urls": [
+        "https://m.media-amazon.com/images/I/51JJnUYuvpL._AC_SL1080_.jpg",
+        "https://m.media-amazon.com/images/I/51CQrLRCtYL._AC_.jpg",
+        "https://m.media-amazon.com/images/I/51GcJ9HNE7L._AC_.jpg",
+        "https://m.media-amazon.com/images/I/51fYiAagxpL._AC_.jpg",
+        "https://m.media-amazon.com/images/I/A1iXG1yIg9L._AC_SL1500_.jpg"
+      ],
+      "price": "$14.49",
+      "rating": 4.4,
+      "quoted_review": "Great gadget that gets the job done in a split second. Perfect slices every time.",
+      "category_main": "Kitchen",
+      "product_name_full": "Hutzler 571 Banana Slicer,193925,Yellow, 11.25\"",
+      "url": "https://www.amazon.com/Hutzler-3571-571-Banana-Slicer/dp/B0047E0EII/?_encoding=UTF8&pd_rd_w=WDDr6&content-id=amzn1.sym.dde481d7-92dc-42ce-a703-f1bc175e21c6%3Aamzn1.symc.d10b1e54-47e4-4b2a-b42d-92fe6ebbe579&pf_rd_p=dde481d7-92dc-42ce-a703-f1bc175e21c6&pf_rd_r=2SF1D9FJR2S3QMTBXZ69&pd_rd_wg=6ZHYZ&pd_rd_r=6983c4a9-ed79-4049-a338-63fc059c98c7&ref_=pd_hp_d_atf_ci_mcx_mr_hp_atf_m"
+    },
+    {
+      "product_id": 2,
+      "product_name": "Pineapple Corer",
+      "affiliate_url": "https://amzn.to/3Wt1oPx",
+      "image_urls": [
+        "https://m.media-amazon.com/images/I/71XImSWQeUL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/617fw3+wjYL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71ejMWsbUrL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81cONOek27L._AC_SL1500_.jpg"
+      ],
+      "price": "$7.04",
+      "rating": 4.7,
+      "quoted_review": "This cutter goes through the pineapple like a sharp knife through butter.",
+      "category_main": "Kitchen",
+      "product_name_full": "Pineapple Corer, [Upgraded, Reinforced, Thicker Blade] Newness Premium Pineapple Corer Remover, Stainless Steel Pineapple Core Remover Kitchen Tool with...",
+      "url": "https://www.amazon.com/dp/B08G88G8SD/ref=syn_sd_onsite_desktop_0?ie=UTF8&pf_rd_p=eece463e-9765-4c82-95e6-6bb6969aa564&pf_rd_r=DRNQXE53CWAX96HSVJQT&pd_rd_wg=oAhbd&pd_rd_w=TnzRZ&pd_rd_r=88f80a98-295d-4cee-8db0-8b5b3958a2e3&aref=Cc6S0ioaBG&th=1"
+    },
+    {
+      "product_id": 3,
+      "product_name": "Magnetic Measuring Spoons",
+      "affiliate_url": "https://amzn.to/49XVHMN",
+      "image_urls": [
+        "https://m.media-amazon.com/images/I/71oHrsyHNpL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71KRW3bT7BL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71XlK7ewLOL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71crfiNTEXL._AC_SL1500_.jpg"
+      ],
+      "price": "$6.99",
+      "rating": 4.8,
+      "quoted_review": "These magnetic measuring spoons are a must-have in my kitchen!",
+      "category_main": "Kitchen",
+      "product_name_full": "Magnetic Measuring Spoons Set Stainless Steel with Leveler, Stackable Metal Tablespoon Measure Spoon for Baking, Cups and Spoon Set Kitchen Gadgets Apartment Essentials Fits in Spice Jars",
+      "url": "https://www.amazon.com/Magnetic-Measuring-Stainless-Baking%EF%BC%8CEasier-Use-Utensils/dp/B09P6HFCSP/ref=sr_1_7?crid=28TWSHO52BWQS&dib=eyJ2IjoiMSJ9.3lbgMue6ISmmvNlXL9hZzXanP866IdRCesjVBKk9RMvPiWCDpIADBba6ErMwA0n7HN2gQAJFvBXhfdJeQOg64m2mWxT_gPBTZRkgY5xQbVuW-v2VeAZ49w1NVgmpD8eZu0SuBV3dsoR9zu5mddQCB1zLF1ISCLwGIUz0Dw9x0LIbmIs_tRlLKxqjsiVInXavYkETkoLIFkROCwJy4Vlhp1SE0P0zLydh-GS2Xvzi8_V_-8sZAZZjmjedAuMEOz14t-yFhma4mxeM27tKgw2WiIzEpcb_N8OArOqsBbfLLc0.356WGQbMX-bFNT308ijjKEunfBQPeD075sJRgn5q-r0&dib_tag=se&keywords=gadgets+under+10+dollars&qid=1714674330&refinements=p_72%3A1248915011&rnid=1248913011&s=home-garden&sprefix=gadgets+under+10+dollars%2Cgarden%2C94&sr=1-7"
+    },
+    {
+      "product_id": 4,
+      "product_name": "Condiment Fork",
+      "affiliate_url": "https://amzn.to/3WpJehz",
+      "image_urls": [
+        "https://m.media-amazon.com/images/I/71O2Bbkv--L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71O2Bbkv--L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71Uy2p5-mML._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81kC6coXRdL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61muj+48upL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/717rOm6owPL._AC_SL1500_.jpg"
+      ],
+      "price": "$6.71",
+      "rating": null,
+      "quoted_review": "Quote me and I'll deny it, but I'm in love with a Fridge Fork",
+      "category_main": "Kitchen",
+      "product_name_full": "Chef'n FridgeFork Condiment Fork (Arugula and Meringue) Stainless Steel",
+      "url": "https://www.amazon.com/Chefn-FridgeFork-Condiment-Arugula-Meringue/dp/B003O5KVK2/ref=sr_1_60?crid=28TWSHO52BWQS&dib=eyJ2IjoiMSJ9.fq7Zy6B4Wo5tVWcYAGNFtnMnxLIlwCeNEHOExkQv-KWYCntepXRGwyvIRqX0VqiPSAc2XmC4pHAQhkYmo4SIwuqKSfDWjxtKoM2qmcVJwBYQCjPIQwxqFeMh4oAgpSZK-5hzGY8OKgtYJi31794k1rOAm6Ox7M3pKc8xjNIVN8jmgKpoVlbeJoCbYdkpu6K72Tq0Cma6mYU6souWmOdt0NEKcRCafnyjEbGV7lYJUbGgYvxv3DoZdr9Wjtb4WbD_8sZAZZjmjedAuMEOz14t-yFhma4mxeM27tKgw2WiIzEpcb_N8OArOqsBbfLLc0.2egbUyyVfq88d3dwbMGj0a9E8o5WYuzS0w0Y0Bf7cK0&dib_tag=se&keywords=gadgets+under+10+dollars&qid=1714674606&refinements=p_72%3A1248915011&rnid=1248913011&s=home-garden&sprefix=gadgets+under+10+dollars%2Cgarden%2C94&sr=1-60"
+    },
+        {
+            "product_id": 5,
+            "product_name": "Glass Cleaning Brush",
+            "affiliate_url": "https://amzn.to/3y1Sgr3",
+            "image_urls": [
+                "https://m.media-amazon.com/images/I/61iMNGvSxDS._AC_SL1100_.jpg",
+                "https://m.media-amazon.com/images/I/71dEMriHgqS._AC_SL1100_.jpg",
+                "https://m.media-amazon.com/images/I/71u7WdO-3WS._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71qlGWGUyES._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51ZqiGBO+IS._AC_SL1100_.jpg",
+                "https://m.media-amazon.com/images/I/61VyOpNfQnS._AC_SL1492_.jpg"
+            ],
+            "price": "$6.99",
+            "rating": 3.8,
+            "quoted_review": "This tool has been a lifesaver on cleaning jobs.",
+            "category_main": "Kitchen",
+            "product_name_full": "Xicennego Multifunctional Double-Sided Glass Sponge Cleaning Brush Wiper Mirror Glass Tile Cleaning Brush Bathroom Squeegee(1pack)",
+            "url": "https://www.amazon.com/Xicennego-Multifunctional-Double-Sided-Cleaning-Bathroom/dp/B09772ML3C/ref=sr_1_67?crid=28TWSHO52BWQS&dib=eyJ2IjoiMSJ9.fq7Zy6B4Wo5tVWcYAGNFtnMnxLIlwCeNEHOExkQv-KWYCntepXRGwyvIRqX0VqiPSAc2XmC4pHAQhkYmo4SIwuqKSfDWjxtKoM2qmcVJwBYQCjPIQwxqFeMh4oAgpSZK-5hzGY8OKgtYJi31794k1rOAm6Ox7M3pKc8xjNIVN8jmgKpoVlbeJoCbYdkpu6K72Tq0Cma6mYU6souWmOdt0NEKcRCafnyjEbGV7lYJUbGTVpYmUs6T64lUXkQysTbC.RzZwlJpJJz5LSSLmYeiu2_DQk8BZR1_NAekgs8ntnY8&dib_tag=se&keywords=gadgets%2Bunder%2B10%2Bdollars&qid=1714673955&s=home-garden&sprefix=gadgets%2Bunder%2B10%2Bdollars%2Cgarden%2C94&sr=1-67&th=1"
+        },
+        {
+            "product_id": 6,
+            "product_name": "Onion Holder",
+            "affiliate_url": "https://amzn.to/3ya62rs",
+            "image_urls": [
+                "https://m.media-amazon.com/images/I/71GTPDTsoPL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71WQ9ZitlRL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71O8PSyqX7L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81ebNNN1caL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71W8dfmQqPL._AC_SL1500_.jpg"
+            ],
+            "price": "$4.99",
+            "rating": 4.5,
+            "quoted_review": "Holds things stable while cutting and keeps your fingers away from the blades.",
+            "category_main": "Kitchen",
+            "product_name_full": "Stainless Steel Onion Holder for Slicing,Onion Cutter for Slicing and Storage of Onions,Avocados,Eggs and Other Vegetables Black",
+            "url": "https://www.amazon.com/Stainless-Slicing-Storage-Avocados-Vegetables/dp/B08TWN43G4/ref=sr_1_4?crid=Z8IGZWLAUI6J&dib=eyJ2IjoiMSJ9.D8A_z5W12VyB-KHnhjkNmSPxiQp1iqsIg8SvCCFik8wcxnJ9VbkIDuzsbRVFMuFzq6dEAVIbYWb7m12kqoPx9WZVTXgWBoTsGSSc_i5OJyb5LDUtFagky3B0h2ovxX48lBSdM3FeJV4VyUfSCW0UoP7FlGOX3mDltwJo3nlUk4NbN35ZmYZ9lloHXrHilqOOj9XXWdQriMwXeA_IGQtN7NHjgDW_byuiUxGKy5emR-agWB7AXOHgTJqw-pykWn9DWiVauMGB03V7uUsBEFNadzBFnAWRlX9mppqZvP64_18.iGAJswLTC8CZgA82SBTBLY_0Am11PtxjjA5biFDLcdY&dib_tag=se&keywords=onion+slice+holder&qid=1714676283&s=home-garden&sprefix=onion+slice+holde%2Cgarden%2C92&sr=1-4"
+        },
+        {
+            "product_id": 7,
+            "product_name": "Bag Clips",
+            "affiliate_url": "https://amzn.to/4aYrDC1",
+            "image_urls": [
+                "https://m.media-amazon.com/images/I/61q93I5k1PL._AC_SL1128_.jpg",
+                "https://m.media-amazon.com/images/I/713ZpoV7SXL._AC_SL1129_.jpg",
+                "https://m.media-amazon.com/images/I/61U20d6OfOL._AC_SL1128_.jpg",
+                "https://m.media-amazon.com/images/I/61IIa+AlMFL._AC_SL1129_.jpg"
+            ],
+            "price": "$23.95",
+            "rating": 4.8,
+            "quoted_review": "These are amazing!",
+            "category_main": "Kitchen",
+            "product_name_full": "GripStic Bag Clips. 12pc Durable Food Clip Set for Kitchen Storage. Reusable Chip Bag Clips. Color Coded Bag Closure Sticks Provide Air Tight Seal. Durable Cereal Bag Clips. Chip Clips Reinvented.",
+            "url": "https://www.amazon.com/GripStic-Durable-Storage-Reusable-Reinvented/dp/B00PR82UC6/ref=sr_1_46_sspa?crid=28TWSHO52BWQS&dib=eyJ2IjoiMSJ9.yEMgdEwSCb5qcDo5eM6bDr7RKZ0SS38uV3qrzj_LYx-th8ahtfZJYHrLEuOFqKx9WxYkkU6QLINFCw6c-LBPGIuEtIAjgZMpx9ZGy588Q8_a7zHo5i_zK41kFhUEvym9MA5WNsC0iUmaytx4k-U5lDKRFl9sGT_h7gEvUi8p5SJlCxo8tCafFAThD8zcQ877RAcBVtFJOdpX1aYorcVmOBx_ti-f3idpAOYlEWhwf98G_EdtyhxwmM3gxLO-Nk-R.qhH1Pe2xcvHY0clxE9VCDXTVcvEzJzQ0QmgmOCXioOs&dib_tag=se&keywords=gadgets+under+10+dollars&qid=1714673420&s=home-garden&sprefix=gadgets+under+10+dollars%2Cgarden%2C94&sr=1-46-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&psc=1&smid=ANXBH3XHS1211"
+        },
+        {
+            "product_id": 8,
+            "product_name": "Finger Protector",
+            "affiliate_url": "https://amzn.to/4bDGEcr",
+            "image_urls": [
+                "https://m.media-amazon.com/images/I/61LZxyoN5vL._AC_SL1200_.jpg",
+                "https://m.media-amazon.com/images/I/71E2pyAAN3L._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/51Ko3iGMkJL._AC_.jpg",
+                "https://m.media-amazon.com/images/I/61l0pOzIIhL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61hFR8CHPlL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61UV9Ww1aFL._AC_SL1200_.jpg"
+            ],
+            "price": "$5.99",
+            "rating": 4,
+            "quoted_review": "They are a simple tool to teach and protect.",
+            "category_main": "Kitchen",
+            "product_name_full": "Stainless Steel Finger Hand Protector, Multifunctional Finger Guard for Cutting Food Protector Cut Resistant Finger Cots Set, Kitchen Tools Finger Guards Protector for Chopping Vegetables (2PCS)",
+            "url": "https://www.amazon.com/SLXDEX-Stainless-Protector-Adjustable-Chopping/dp/B09FDW2F9L/ref=sr_1_4?crid=11OSZU92MQNF&dib=eyJ2IjoiMSJ9.AL2fECOFakuNLlB2GNwYJaD8tkDi8RfgLUzW80RD54G8Kj081tCir45t-HjAUuptS1lFmqz5wwlYth366ZGQHoI-pXOwhz4EWo-4GxkQReqMiJiWZbp19lBl9xNkBC0nzc55dnFwrRpd1fmoB5L6IInrX0RvlmZefMyWo-TQEZ5jtcOLCt5l7BVuIEtYZbFLsO-9TAihRLyqL9o9j7nuRoZ-nHyngbEeSwarsBAHA8LjX4vsJuTDoaIy-yVXBXQNFSNhooj_hg4f_K_-Wy_WCx1W1HsUiQ39UHTMp4ATWSk.UdqlY64kImgOgeFu-gv-JHuqrDgb7uG4ZwMyi2xiH2A&dib_tag=se&keywords=finger%2Bprotector%2Bsteel%2Bcutting&qid=1714676683&s=home-garden&sprefix=finger%2Bprotector%2Bsteel%2Bcutting%2Cgarden%2C151&sr=1-4&th=1"
+        },
+        {
+            "product_id": 9,
+            "product_name": "Neck Reading Light",
+            "affiliate_url": "https://amzn.to/3UInaxz",
+            "image_urls": [
+                "https://m.media-amazon.com/images/I/61bLgokWTwL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71AWva4EJmL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71405if6Q4L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/714Rc5QfXAL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61eLWwRlxPL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/710YOu6NLHL._AC_SL1500_.jpg"
+            ],
+            "price": "$21.99",
+            "rating": 4.7,
+            "quoted_review": "Definitely worth purchasing.",
+            "category_main": "Electronics",
+            "product_name_full": "Glocusent LED Neck Reading Light, Book Light for Reading in Bed, 3 Colors, 6 Brightness Levels, Bendable Arms, Rechargeable, Long Lasting, Perfect for Reading, Knitting, Camping, Repairing",
+            "url": "https://www.amazon.com/Glocusent-Brightness-Bendable-Rechargeable-Repairing/dp/B07WNRN9WQ/ref=sr_1_51_sspa?crid=28TWSHO52BWQS&dib=eyJ2IjoiMSJ9.ldlZD59BeWsfp5J64RPTPRNj5g2M1BLL3DvUeF-TO5zxgBalcSC5yMpGGJPhLTVm68GaDrWoqUmndl7yVbBlzuCo0jddmtOowdJ3SIYG2ro.lKVUXBFF4KsPBMYvH8yIjAJ1VkuO99RfrN1dawRRpTA&dib_tag=se&keywords=gadgets+under+10+dollars&qid=1714673955&s=home-garden&sprefix=gadgets+under+10+dollars%2Cgarden%2C94&sr=1-51-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfbmV4dA&psc=1"
+        },
+        {
+            "product_id": 10,
+            "product_name": "Refrigerator Liners",
+            "affiliate_url": "https://amzn.to/3UE477r",
+            "image_urls": [
+                "https://m.media-amazon.com/images/I/717tq4SMUgL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71tPGKZ4jIL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81oHLAlxTNL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71XVNe66KaL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71zAZKu1gML._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71E1Hr3nn+L._AC_SL1500_.jpg"
+            ],
+            "price": "$6.49",
+            "rating": 4.3,
+            "quoted_review": "I LOVE THESE!",
+            "category_main": "Kitchen",
+            "product_name_full": "8 Pcs Refrigerator Liners,Washable Cuttable Refrigerator Liner Fits Any Refrigerator Size,Home Kitchen Gadgets Accessories for Non-Slip Waterproof Refrigerator Liner Drawer Table Mat Utensil Coaster",
+            "url": "https://www.amazon.com/Refrigerator-Washable-Cuttable-Accessories-Waterproof/dp/B0B377YVPM/ref=sr_1_56?crid=28TWSHO52BWQS&dib=eyJ2IjoiMSJ9.ldlZD59BeWsfp5J64RPTPRNj5g2M1BLL3DvUeF-TO5zxgBalcSC5yMpGGJPhLTVm68GaDrWoqUmndl7yVbBlzuCo0jddmtOowdJ3SIYG2ro.lKVUXBFF4KsPBMYvH8yIjAJ1VkuO99RfrN1dawRRpTA&dib_tag=se&keywords=gadgets+under+10+dollars&qid=1714673955&s=home-garden&sprefix=gadgets+under+10+dollars%2Cgarden%2C94&sr=1-56"
+        }
+  ]
+}
+  

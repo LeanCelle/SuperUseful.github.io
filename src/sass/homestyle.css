@@ -92,7 +92,8 @@
   transition: opacity 0.5s ease; /* Transición suave para el cambio de productos */
 }
 
-.cardd {
+.card {
+  width: 33vw;
   margin: 0px 0px 150px 0px;
   padding: 15px;
   background-color: #fff;
@@ -100,21 +101,22 @@
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
 }
-
 .carousel {
-  display: flex;
-  justify-content: center;
-  width: 300px;
+  display: block;
+  margin: auto;
+  height: 300px;
   align-items: center;
 }
 
 .productImg {
-  width: 100%;
-  display: block; /* Para asegurar que la imagen se muestre como un bloque */
-  margin: auto; /* Auto en ambos lados para centrar horizontalmente */
+  display: block;
+  margin: auto;
+  width: 100%; /* Máximo ancho permitido */
+  max-height: 100%; /* Máxima altura permitida */
   height: auto; /* Altura automática para mantener la proporción */
-  border-radius: 5%;
+  object-fit: contain; /* Ajuste del contenido para mantener la proporción */
 }
+
 
 .productName {
   color: #333; /* Color más oscuro para un aspecto más profesional */
@@ -163,6 +165,8 @@
 }
 
 .buyButton {
+  text-decoration: none;
+  color:#333;
   width: 50%;
   margin: 0px;
   font-family: "Urbanist", sans-serif;

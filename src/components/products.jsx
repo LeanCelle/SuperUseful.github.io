@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../sass/homestyle.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Rating from '@mui/material/Rating';
+import { getDatabase, ref as dbRef, onValue } from 'firebase/database';
+import { app } from '../data/firebase';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -9,28 +11,38 @@ function Products() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    // Función para generar productos ficticios
-    const generateFakeProducts = () => {
-      const newProducts = [];
-      for (let i = 1; i <= 10; i++) {
-        newProducts.push({
-          id: i,
-          name: `Product ${i}`,
-          price: `$${Math.floor(Math.random() * 100) + 1}`,
-          rating: 4.5,
-          image: `${process.env.PUBLIC_URL}/img/favicon.ico`
-        });
+    const db = getDatabase(app);
+    const productsRef = dbRef(db, 'products');
+  
+    onValue(productsRef, (snapshot) => {
+      const productsData = snapshot.val();
+      if (productsData) {
+        const productsArray = Object.keys(productsData).map(key => ({
+          key,
+          id: productsData[key].product_id,
+          name: productsData[key].product_name,
+          price: productsData[key].price,
+          rating: productsData[key].rating,
+          images: productsData[key].image_urls || [],
+          description: productsData[key].quoted_review || '',
+          url: productsData[key].url || ''
+        }));
+        setProducts(productsArray);
+      } else {
+        setProducts([]);
       }
-      return newProducts;
-    };
-
-    // Genera productos ficticios iniciales
-    setProducts(generateFakeProducts());
+    }, (error) => {
+      // Handle Firebase fetch error
+      console.error('Error fetching products:', error);
+      // Optionally setProducts([]) or handle error state
+    });
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       const container = containerRef.current;
+      if (!container) return;
+
       const scrollTop = container.scrollTop;
       const containerHeight = container.clientHeight;
       const productHeight = container.scrollHeight / products.length;
@@ -43,53 +55,46 @@ function Products() {
     };
 
     const container = containerRef.current;
-    container.addEventListener('scroll', handleScroll);
+    if (container) {
+      container.addEventListener('scroll', handleScroll);
 
-    return () => {
-      container.removeEventListener('scroll', handleScroll);
-    };
+      return () => {
+        container.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, [currentIndex, products]);
 
-  const handleBuy = (product) => {
-    alert(`Compraste ${product.name} por ${product.price}`);
-  };
-
   return (
-    <>
     <div className="product-section" ref={containerRef}>
       {products.map((product, index) => (
         <div
-          key={product.id}
+          key={product.key}
           className={`product ${index === currentIndex ? 'current' : ''}`}
           style={{ scrollSnapAlign: 'start' }}
         >
-          <div className='cardd'>
+          <div className='card'>
             <h3 className="productName">{product.name}</h3>
-            <Carousel prevIcon={null} nextIcon={null} interval={null}>
-              <Carousel.Item className='carousel'>
-                <img className='productImg' src="https://m.media-amazon.com/images/I/81cONOek27L._AC_SL1500_.jpg" alt="" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={product.image} alt={product.name} className='productImg'/>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={product.image} alt={product.name} className='productImg'/>
-              </Carousel.Item>
-            </Carousel>
+            <div className="">
+              <Carousel prevIcon={null} nextIcon={null} interval={null}>
+                {product.images.map((image, imgIndex) => (
+                  <Carousel.Item key={imgIndex} className='carousel'>
+                    <img className='productImg' src={image} alt={`Product ${product.key}`} />
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            </div>
             <p className="productPrice">{product.price}</p>
             <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly className="productRating" size="small"/>
-            {/* Rating de Material-UI con clase productRating */}
-            <p className="productOpinion">"The product I use changed my life"</p>
+            <p className="productOpinion">{product.description}</p>
             <div className='buttonContainer'>
               <p className='invisibleP'></p>
-              <p className="buyButton" onClick={() => handleBuy(product)}>Buy Now</p>
+              <a href={product.url} className="buyButton" target='blank'>Buy Now</a>
               <img src="/img/compras.png" alt="amazon." className='amazonIcon'/>
             </div>
           </div>
         </div>
       ))}
     </div>
-    </>
   );
 }
 
