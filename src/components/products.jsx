@@ -72,7 +72,7 @@ function Products() {
           className={`product ${index === currentIndex ? 'current' : ''}`}
           style={{ scrollSnapAlign: 'start' }}
         >
-          <div className='card'>
+          <div className='cardd'>
             <h3 className="productName">{product.name}</h3>
             <div className="">
               <Carousel prevIcon={null} nextIcon={null} interval={null}>
@@ -85,7 +85,7 @@ function Products() {
             </div>
             <p className="productPrice">{product.price}</p>
             <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly className="productRating" size="small"/>
-            <p className="productOpinion">{product.description}</p>
+            <p className="productOpinion">"{product.description}"</p>
             <div className='buttonContainer'>
               <p className='invisibleP'></p>
               <a href={product.url} className="buyButton" target='blank'>Buy Now</a>

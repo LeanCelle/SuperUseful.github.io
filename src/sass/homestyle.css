@@ -92,8 +92,8 @@
   transition: opacity 0.5s ease; /* Transición suave para el cambio de productos */
 }
 
-.card {
-  width: 300px;
+.cardd {
+  width: 350px;
   margin: 0px 0px 150px 0px;
   padding: 15px;
   background-color: #fff;
