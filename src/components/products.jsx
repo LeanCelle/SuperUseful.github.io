@@ -7,7 +7,6 @@ import { app } from '../data/firebase';
 
 function Products() {
   const [products, setProducts] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -38,38 +37,12 @@ function Products() {
     });
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const container = containerRef.current;
-      if (!container) return;
-
-      const scrollTop = container.scrollTop;
-      const containerHeight = container.clientHeight;
-      const productHeight = container.scrollHeight / products.length;
-
-      if (scrollTop > currentIndex * productHeight + containerHeight / 2) {
-        setCurrentIndex(prevIndex => Math.min(prevIndex + 1, products.length - 1));
-      } else if (scrollTop < currentIndex * productHeight - containerHeight / 2) {
-        setCurrentIndex(prevIndex => Math.max(prevIndex - 1, 0));
-      }
-    };
-
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('scroll', handleScroll);
-
-      return () => {
-        container.removeEventListener('scroll', handleScroll);
-      };
-    }
-  }, [currentIndex, products]);
-
   return (
     <div className="product-section" ref={containerRef}>
       {products.map((product, index) => (
         <div
           key={product.key}
-          className={`product ${index === currentIndex ? 'current' : ''}`}
+          className={`product`}
           style={{ scrollSnapAlign: 'start' }}
         >
           <div className='cardd'>
