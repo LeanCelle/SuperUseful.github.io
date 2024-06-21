@@ -104,15 +104,20 @@
 .carousel {
   display: block;
   margin: auto;
-  height: 45vh;
+  height: 50vh;
   align-items: center;
+}
+
+.carousel-indicators {
+  background-color: #00000018;
+  border-radius: 10px;
 }
 
 .productImg {
   display: block;
   margin: auto;
   width: 100%; /* Máximo ancho permitido */
-  max-height: 100%; /* Máxima altura permitida */
+  max-height: 80%; /* Máxima altura permitida */
   height: auto; /* Altura automática para mantener la proporción */
   object-fit: contain; /* Ajuste del contenido para mantener la proporción */
 }
@@ -126,7 +131,7 @@
 }
 
 .productPrice {
-  margin: 20px 0px 10px 0px;
+  margin: 0px 0px 10px 0px;
   font-weight: bold;
   font-size: 13px; /* Tamaño de fuente estándar */
   font-family: "Urbanist", sans-serif;

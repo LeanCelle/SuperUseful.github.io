@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../sass/homestyle.css';
+import '../sass/homestyle.css'; // Asegúrate de que este archivo esté importando correctamente
 import Carousel from 'react-bootstrap/Carousel';
 import Rating from '@mui/material/Rating';
 import { getDatabase, ref as dbRef, onValue } from 'firebase/database';
@@ -22,7 +22,7 @@ function Products() {
           id: productsData[key].product_id,
           name: productsData[key].product_name,
           price: productsData[key].price,
-          rating: productsData[key].rating,
+          rating: parseFloat(productsData[key].rating), // Asegúrate de convertir a número flotante si es necesario
           images: productsData[key].image_urls || [],
           description: productsData[key].quoted_review || '',
           url: productsData[key].url || ''
@@ -84,11 +84,18 @@ function Products() {
               </Carousel>
             </div>
             <p className="productPrice">{product.price}</p>
-            <Rating name={`product-rating-${index}`} value={product.rating} precision={0.5} readOnly className="productRating" size="small"/>
+            <Rating
+              name={`product-rating-${index}`}
+              value={product.rating}
+              precision={0.01} // Ajusta según sea necesario (0.1 para mostrar décimas de estrella)
+              readOnly
+              size="small"
+              className="productRating"
+            />
             <p className="productOpinion">"{product.description}"</p>
             <div className='buttonContainer'>
               <p className='invisibleP'></p>
-              <a href={product.url} className="buyButton" target='blank'>Buy Now</a>
+              <a href={product.url} className="buyButton" target='_blank' rel='noopener noreferrer'>Buy Now</a>
               <img src="/img/compras.png" alt="amazon." className='amazonIcon'/>
             </div>
           </div>
