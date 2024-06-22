@@ -84,7 +84,7 @@
 
 /* Estilos para la sección de productos */
 .product-section {
-  height: 90vh;
+  height: 100vh;
   overflow-y: scroll; /* Permite el scroll vertical */
   scroll-snap-type: y mandatory; /* Scroll snap vertical obligatorio */
   scroll-behavior: smooth; /* Scroll suave */
