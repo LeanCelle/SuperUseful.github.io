@@ -11,7 +11,7 @@ function Navbar() {
       <div className="div-mobile-navbar">
         <nav className="mobile-navbar">
           <ul>
-            <li className="nav-item"><GoHome /></li>
+            <li className="nav-item homeIcon"><GoHome /></li>
             <li className="nav-item"><CiSearch /></li>
             <li className="nav-item"><CiBookmark /></li>
             <li className="nav-item"><CiUser /></li>

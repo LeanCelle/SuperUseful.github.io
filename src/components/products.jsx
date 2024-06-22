@@ -47,7 +47,7 @@ function Products() {
         >
           <div className='cardd'>
             <h3 className="productName">{product.name}</h3>
-            <div className="">
+            <div>
               <Carousel prevIcon={null} nextIcon={null} interval={null}>
                 {product.images.map((image, imgIndex) => (
                   <Carousel.Item key={imgIndex} className='carousel'>
@@ -60,7 +60,7 @@ function Products() {
             <Rating
               name={`product-rating-${index}`}
               value={product.rating}
-              precision={0.01} // Ajusta según sea necesario (0.1 para mostrar décimas de estrella)
+              precision={0.1} // Ajusta según sea necesario (0.1 para mostrar décimas de estrella)
               readOnly
               size="small"
               className="productRating"

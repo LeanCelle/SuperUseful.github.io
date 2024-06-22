@@ -62,8 +62,8 @@
 }
 
 .mobile-navbar ul li {
-  display: inline-block;
-  margin: 0 10px;
+  display: flex;
+  padding: 8px 8px;
 }
 
 /* Estilos para los íconos */
@@ -108,9 +108,8 @@
   align-items: center;
 }
 
-.carousel-indicators {
-  background-color: #00000018;
-  border-radius: 10px;
+[data-bs-target] {
+  background-color: #000000 !important;
 }
 
 .productImg {
@@ -182,9 +181,27 @@
 }
 
 .productRating {
-  filter: drop-shadow( 0px 2px 2px rgba(0, 0, 0, 0.178)); /* Sombra ligera */
+  filter: drop-shadow( 0px 2px 2px rgba(193, 20, 20, 0.178)); /* Sombra ligera */
 }
 
 .pMarginButtom {
   background-color: red;
 }
+
+a .active-link {
+  color: #000000;
+  background-color: red;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.homeIcon {
+  background: rgb(236,253,255);
+  background: -moz-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: -webkit-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecfdff",endColorstr="#fff2f7",GradientType=1);
+  border-radius: 20px;
+}
+
+
