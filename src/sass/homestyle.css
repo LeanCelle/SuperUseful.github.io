@@ -63,7 +63,16 @@
 
 .mobile-navbar ul li {
   display: flex;
-  padding: 8px 8px;
+  padding: 10px 10px;
+}
+
+.homeIcon {
+  background: rgb(236,253,255);
+  background: -moz-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: -webkit-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecfdff",endColorstr="#fff2f7",GradientType=1);
+  border-radius: 20px;
 }
 
 /* Estilos para los íconos */
@@ -193,15 +202,6 @@ a .active-link {
   background-color: red;
   padding: 5px;
   border-radius: 50%;
-}
-
-.homeIcon {
-  background: rgb(236,253,255);
-  background: -moz-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
-  background: -webkit-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
-  background: linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecfdff",endColorstr="#fff2f7",GradientType=1);
-  border-radius: 20px;
 }
 
 
