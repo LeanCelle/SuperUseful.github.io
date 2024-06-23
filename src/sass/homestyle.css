@@ -204,4 +204,26 @@ a .active-link {
   border-radius: 50%;
 }
 
+/* Modal */
+
+.modal-content {
+  background: rgb(236,253,255);
+  background: -moz-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: -webkit-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  background: linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecfdff",endColorstr="#fff2f7",GradientType=1);
+  border: none !important;
+}
+.modal-header {
+  border: none !important;
+}
+.modal-footer {
+  border: none !important;
+}
+
+.btn-secondary {
+  background-color: rgb(94, 54, 255) !important;
+  border: none !important;
+}
+
 
