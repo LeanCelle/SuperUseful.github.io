@@ -19,7 +19,7 @@ function Home() {
         <Products />
         <Navbar />
       </div>
-      {showModal && <StaticExample onClose={closeModal} />} {/* Renderiza el modal si showModal es true */}
+      {showModal && <StaticExample onClose={closeModal}/>}
     </>
   );
 }

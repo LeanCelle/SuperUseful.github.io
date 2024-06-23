@@ -12,7 +12,7 @@ function StaticExample({ onClose }) {
 
         <Modal.Body>
           <p>Just a heads up—some of the product links you click might be affiliate links, including Amazon Associates links, which means we may earn a small commission if you decide to make a purchase. Don’t worry, it won’t cost you anything extra, and it helps us keep bringing you awesome products!</p>
-          <p>Enjoy discovering great finds!</p>
+          <p>Enjoy discovering great finds!</p>
         </Modal.Body>
 
         <Modal.Footer>

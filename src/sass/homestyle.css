@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
+/* Block scroll in app */
+:root {
+  overflow: hidden;
+}
+
 /* Estilos para el cuerpo de la página */
 .body {
   font-family: "Urbanist", sans-serif;
   background-color: #f8f8f8;
   margin: 0; /* Elimina márgenes predeterminados */
-}
-
-/* Estilos para el encabezado */
-.headerContainer {
-  overflow: hidden;
 }
 
 .header {
