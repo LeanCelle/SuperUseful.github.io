@@ -1,9 +1,11 @@
+// Products.js
+
 import React, { useState, useEffect, useRef } from 'react';
-import '../sass/homestyle.css'; // Asegúrate de que este archivo esté importando correctamente
 import Carousel from 'react-bootstrap/Carousel';
-import Rating from '@mui/material/Rating';
+import StarRating from './stars';
 import { getDatabase, ref as dbRef, onValue } from 'firebase/database';
 import { app } from '../data/firebase';
+import '../sass/homestyle.css';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -21,7 +23,7 @@ function Products() {
           id: productsData[key].product_id,
           name: productsData[key].product_name,
           price: productsData[key].price,
-          rating: parseFloat(productsData[key].rating), // Asegúrate de convertir a número flotante si es necesario
+          rating: parseFloat(productsData[key].rating),
           images: productsData[key].image_urls || [],
           description: productsData[key].quoted_review || '',
           url: productsData[key].url || ''
@@ -31,20 +33,14 @@ function Products() {
         setProducts([]);
       }
     }, (error) => {
-      // Handle Firebase fetch error
       console.error('Error fetching products:', error);
-      // Optionally setProducts([]) or handle error state
     });
   }, []);
 
   return (
     <div className="product-section" ref={containerRef}>
       {products.map((product, index) => (
-        <div
-          key={product.key}
-          className={`product`}
-          style={{ scrollSnapAlign: 'start' }}
-        >
+        <div key={product.key} className={`product`} style={{ scrollSnapAlign: 'start' }}>
           <div className='cardd'>
             <h3 className="productName">{product.name}</h3>
             <div>
@@ -57,14 +53,7 @@ function Products() {
               </Carousel>
             </div>
             <p className="productPrice">{product.price}</p>
-            <Rating
-              name={`product-rating-${index}`}
-              value={product.rating}
-              precision={0.1} // Ajusta según sea necesario (0.1 para mostrar décimas de estrella)
-              readOnly
-              size="small"
-              className="productRating"
-            />
+            <StarRating rating={product.rating} />
             <p className="productOpinion">"{product.description}"</p>
             <div className='buttonContainer'>
               <p className='invisibleP'></p>

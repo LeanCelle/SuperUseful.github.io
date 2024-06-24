@@ -227,3 +227,36 @@ a .active-link {
 }
 
 
+
+/* homestyle.css */
+
+.star-rating {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.star-icon {
+  filter: drop-shadow( 0px 2px 2px rgba(193, 20, 20, 0.178)); /* Sombra ligera */
+  color: #ccc;
+  display: inline-block;
+}
+
+.star-icon.filled {
+  color: rgb(247, 210, 0); /* Color de estrellas llenas */
+}
+
+.star-icon.half-filled {
+  position: relative;
+  &::before {
+    content: '\2605'; /* Código de estrella vacía */
+    position: absolute;
+    left: 0;
+    color: rgb(247, 210, 0); /* Color de estrellas llenas */
+    overflow: hidden;
+    width: 50%;
+  }
+}
+
+
+
+
