@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../sass/homestyle.css'; // Asegúrate de que este archivo esté importando correctamente
 import Carousel from 'react-bootstrap/Carousel';
 import Rating from '@mui/material/Rating';
 import { getDatabase, ref as dbRef, onValue } from 'firebase/database';
 import { app } from '../data/firebase';
+import '../sass/homestyle.css'; // Asegúrate de que este archivo esté importando correctamente
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -35,6 +35,28 @@ function Products() {
       console.error('Error fetching products:', error);
       // Optionally setProducts([]) or handle error state
     });
+
+    const handleScroll = (event) => {
+      if (containerRef.current) {
+        event.preventDefault(); // Previene el comportamiento por defecto del scroll
+        containerRef.current.scrollTop += event.deltaY * 0.01; // Ajusta el factor multiplicador según la sensibilidad deseada
+      }
+    };
+
+    if (containerRef.current) {
+      // Agregar el evento de scroll personalizado aquí
+      containerRef.current.addEventListener('wheel', handleScroll, { passive: true });
+    }
+
+    // Copia containerRef.current a una variable local
+    const currentContainer = containerRef.current;
+
+    return () => {
+      // Usar la variable local en la función de limpieza
+      if (currentContainer) {
+        currentContainer.removeEventListener('wheel', handleScroll);
+      }
+    };
   }, []);
 
   return (
