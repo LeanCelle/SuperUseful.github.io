@@ -113,7 +113,7 @@
 .carousel {
   display: block;
   margin: auto;
-  height: 40vh;
+  height: 42vh;
   align-items: center;
 }
 
@@ -232,7 +232,7 @@ a .active-link {
 }
 
 .modal-bottom.show {
-  transform: translateY(calc(100vh - 100%)) !important; /* Ajusta la posición final del modal */
+  transform: translateY(calc(160% - 100%)) !important; /* Ajusta la posición final del modal */
 }
 
 .fade {
