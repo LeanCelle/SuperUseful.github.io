@@ -222,4 +222,17 @@ a .active-link {
   border: none !important;
 }
 
+/* styles.css */
+.modal-bottom {
+  bottom: 0 !important;
+  width: 100% !important;
+  transition: transform 0.8s ease-out !important;
+  transform: translateY(100%) !important;
+}
+
+.modal-bottom.show {
+  transform: translateY(0) !important;
+}
+
+
 
