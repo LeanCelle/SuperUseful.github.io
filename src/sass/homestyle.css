@@ -113,7 +113,7 @@
 .carousel {
   display: block;
   margin: auto;
-  height: 45vh;
+  height: 40vh;
   align-items: center;
 }
 
@@ -225,15 +225,20 @@ a .active-link {
 /* styles.css */
 .modal-bottom {
   margin: 0 auto !important;
-  bottom: 0 !important;
+  top: 0 !important;
   width: 100% !important;
   transition: transform 0.6s ease-out !important;
-  transform: translateY(100%) !important;
+  transform: translateY(-100%) !important;
 }
 
 .modal-bottom.show {
-  transform: translateY(0) !important;
+  transform: translateY(calc(100vh - 100%)) !important; /* Ajusta la posición final del modal */
 }
+
+.fade {
+  padding: 0px;
+}
+
 
 
 
