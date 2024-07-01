@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/homestyle.css'; // Importa los estilos CSS
+import '../css/homestyle.css';
 
 function Header() {
   return (

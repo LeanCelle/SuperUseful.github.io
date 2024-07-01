@@ -1,8 +1,7 @@
-// firebase.jsx
-
 import { initializeApp } from 'firebase/app';
 import {getAuth} from "firebase/auth"
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBlhvRMNRGmp8JkO2OJyWIWzevEEpFaUDU",
     authDomain: "super-useful-demo.firebaseapp.com",
@@ -14,5 +13,8 @@ const firebaseConfig = {
     measurementId: "G-RM9JTGY57L"
   };
 
+// Initialize Firebase with the provided configuration
 export const app = initializeApp(firebaseConfig);
+
+// Initialize Firebase Authentication and export it
 export const firebase_auth = getAuth(app);

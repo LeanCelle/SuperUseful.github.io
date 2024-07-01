@@ -5,13 +5,14 @@
   overflow: hidden;
 }
 
-/* Estilos para el cuerpo de la página */
+/* Styles for the body of the page */
 .body {
   font-family: "Urbanist", sans-serif;
   background-color: #f8f8f8;
-  margin: 0; /* Elimina márgenes predeterminados */
+  margin: 0; /* Remove default margins */
 }
 
+/* Styles for the header */
 .header {
   display: flex;
   justify-content: center;
@@ -31,7 +32,7 @@
   margin-bottom: 10px;
 }
 
-/* Estilos para la barra de navegación móvil */
+/* Styles for the mobile navigation bar */
 .div-mobile-navbar {
   background-color: #f8f8f8;
   display: flex;
@@ -47,9 +48,9 @@
   bottom: 0;
   width: 85%;
   margin: 8px 0px;
-  padding: 10px 20px; /* Ajuste de padding para espaciado interno */
-  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 20px; /* Borde redondeado */
+  padding: 10px 20px; /* Adjust padding for internal spacing */
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 20px; /* Rounded border */
 }
 
 .mobile-navbar ul {
@@ -66,6 +67,7 @@
   padding: 8px 8px;
 }
 
+/* Styles for the home icon */
 .homeIcon {
   background: rgb(236,253,255);
   background: -moz-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
@@ -75,30 +77,30 @@
   border-radius: 20px;
 }
 
-/* Estilos para los íconos */
+/* Styles for the icons */
 .nav-item {
-  font-size: 23px; /* Tamaño de fuente para los íconos */
+  font-size: 23px; /* Font size for icons */
   cursor: pointer;
-  transition: transform 0.3s ease; /* Transición suave para el efecto de escala */
+  transition: transform 0.3s ease; /* Smooth transition for scale effect */
 }
 
-/* Estilos para la sección de productos */
+/* Styles for the product section */
 .product-section {
   height: 90vh;
-  overflow-y: scroll; /* Permite el scroll vertical */
-  scroll-snap-type: y mandatory; /* Scroll snap vertical obligatorio */
-  scroll-behavior: smooth; /* Scroll suave */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Mandatory vertical scroll snap */
+  scroll-behavior: smooth; /* Smooth scrolling */
 }
 
-/* Estilos para los productos */
+/* Styles for the products */
 .product {
   background-color: #f8f8f8;
   display: flex;
-  flex-direction: column; /* Cambia la dirección del flex a columna */
+  flex-direction: column; /* Change flex direction to column */
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start; /* Alineación del snap */
-  transition: opacity 0.5s ease; /* Transición suave para el cambio de productos */
+  scroll-snap-align: start; /* Snap alignment */
+  transition: opacity 0.5s ease; /* Smooth transition for product change */
 }
 
 .cardd {
@@ -106,10 +108,12 @@
   margin: 0px 0px 150px 0px;
   padding: 15px;
   background-color: #fff;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta el tamaño y la intensidad de la sombra */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase size and intensity of shadow */
   border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
+
+/* Styles for the carousel */
 .carousel {
   display: block;
   margin: auto;
@@ -121,37 +125,40 @@
   background-color: #000000 !important;
 }
 
+/* Styles for the product images */
 .productImg {
   display: block;
   margin: auto;
-  width: 100%; /* Máximo ancho permitido */
-  max-height: 80%; /* Máxima altura permitida */
-  height: auto; /* Altura automática para mantener la proporción */
-  object-fit: contain; /* Ajuste del contenido para mantener la proporción */
+  width: 100%; /* Maximum width allowed */
+  max-height: 80%; /* Maximum height allowed */
+  height: auto; /* Auto height to maintain proportion */
+  object-fit: contain; /* Adjust content to maintain proportion */
 }
 
-
+/* Styles for the product name */
 .productName {
-  color: #333; /* Color más oscuro para un aspecto más profesional */
-  font-size: 18px; /* Tamaño de fuente ligeramente mayor */
-  font-weight: bold; /* Texto en negrita */
+  color: #333; /* Darker color for a more professional look */
+  font-size: 18px; /* Slightly larger font size */
+  font-weight: bold; /* Bold text */
   font-family: "Urbanist", sans-serif;
 }
 
+/* Styles for the product price */
 .productPrice {
   margin: 0px 0px 10px 0px;
   font-weight: bold;
-  font-size: 13px; /* Tamaño de fuente estándar */
+  font-size: 13px; /* Standard font size */
   font-family: "Urbanist", sans-serif;
 }
 
+/* Styles for the product opinion */
 .productOpinion {
   font-size: 11px;
   color: #666;
   font-family: "Urbanist", sans-serif;
 }
 
-/* Estilos mejorados para el botón de compra */
+/* Improved styles for the buy button */
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -165,26 +172,29 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecfdff",endColorstr="#fff2f7",GradientType=1);
   color: #090909;
   border: none;
-  border-radius: 25px; /* Bordes redondeados */
-  font-size: 1em; /* Tamaño de fuente estándar */
-  font-weight: bold; /* Texto en negrita */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 25px; /* Rounded borders */
+  font-size: 1em; /* Standard font size */
+  font-weight: bold; /* Bold text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
+/* Styles for invisible paragraph in button container */
 .invisibleP {
   width: 30%;
 }
 
+/* Styles for the buy button */
 .buyButton {
   text-decoration: none;
-  color:#333;
+  color: #333;
   width: 50%;
   margin: 0px;
   font-family: "Urbanist", sans-serif;
 }
 
+/* Styles for the Amazon icon */
 .amazonIcon {
   width: 17px;
 }
@@ -200,8 +210,7 @@ a .active-link {
   border-radius: 50%;
 }
 
-/* Modal */
-
+/* Modal styles */
 .modal-content {
   background: rgb(236,253,255);
   background: -moz-linear-gradient(180deg, rgba(236,253,255,1) 43%, rgba(255,242,247,1) 72%);
@@ -217,12 +226,13 @@ a .active-link {
   border: none !important;
 }
 
+/* Styles for the secondary button */
 .btn-secondary {
   background-color: rgb(94, 54, 255) !important;
   border: none !important;
 }
 
-/* styles.css */
+/* Modal bottom styles */
 .modal-bottom {
   margin: 0 auto !important;
   top: 0 !important;
@@ -232,13 +242,9 @@ a .active-link {
 }
 
 .modal-bottom.show {
-  transform: translateY(calc(162% - 100%)) !important; /* Ajusta la posición final del modal */
+  transform: translateY(calc(162% - 100%)) !important; /* Adjust the final position of the modal */
 }
 
 .fade {
   padding: 0px;
 }
-
-
-
-

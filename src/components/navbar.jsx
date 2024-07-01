@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/homestyle.css'; // Importa los estilos CSS
+import '../css/homestyle.css';
 import { GoHome } from "react-icons/go";
 import { CiSearch } from "react-icons/ci";
 import { CiBookmark } from "react-icons/ci";

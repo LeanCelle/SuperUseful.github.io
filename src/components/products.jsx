@@ -3,16 +3,20 @@ import Carousel from 'react-bootstrap/Carousel';
 import Rating from '@mui/material/Rating';
 import { getDatabase, ref as dbRef, onValue } from 'firebase/database';
 import { app } from '../data/firebase';
-import '../sass/homestyle.css'; // Asegúrate de que este archivo esté importando correctamente
+import '../css/homestyle.css';
 
 function Products() {
+  // State to store products fetched from Firebase
   const [products, setProducts] = useState([]);
+  
+  // Reference for the container to handle custom scrolling
   const containerRef = useRef(null);
 
   useEffect(() => {
     const db = getDatabase(app);
     const productsRef = dbRef(db, 'products');
-  
+    
+    // Fetch products data from Firebase
     onValue(productsRef, (snapshot) => {
       const productsData = snapshot.val();
       if (productsData) {
@@ -21,7 +25,7 @@ function Products() {
           id: productsData[key].product_id,
           name: productsData[key].product_name,
           price: productsData[key].price,
-          rating: parseFloat(productsData[key].rating), // Asegúrate de convertir a número flotante si es necesario
+          rating: parseFloat(productsData[key].rating),
           images: productsData[key].image_urls || [],
           description: productsData[key].quoted_review || '',
           url: productsData[key].url || ''
@@ -33,26 +37,26 @@ function Products() {
     }, (error) => {
       // Handle Firebase fetch error
       console.error('Error fetching products:', error);
-      // Optionally setProducts([]) or handle error state
     });
 
+    // Handle custom scrolling
     const handleScroll = (event) => {
       if (containerRef.current) {
-        event.preventDefault(); // Previene el comportamiento por defecto del scroll
-        containerRef.current.scrollTop += event.deltaY * 0.01; // Ajusta el factor multiplicador según la sensibilidad deseada
+        event.preventDefault(); // Prevent default scroll behavior
+        containerRef.current.scrollTop += event.deltaY * 0.01; // Adjust the multiplier for sensitivity
       }
     };
 
     if (containerRef.current) {
-      // Agregar el evento de scroll personalizado aquí
+      // Add custom scroll event
       containerRef.current.addEventListener('wheel', handleScroll, { passive: true });
     }
 
-    // Copia containerRef.current a una variable local
+    // Copy containerRef.current to a local variable
     const currentContainer = containerRef.current;
 
     return () => {
-      // Usar la variable local en la función de limpieza
+      // Use the local variable in the cleanup function
       if (currentContainer) {
         currentContainer.removeEventListener('wheel', handleScroll);
       }
@@ -64,7 +68,7 @@ function Products() {
       {products.map((product, index) => (
         <div
           key={product.key}
-          className={`product`}
+          className="product"
           style={{ scrollSnapAlign: 'start' }}
         >
           <div className='cardd'>
@@ -82,7 +86,7 @@ function Products() {
             <Rating
               name={`product-rating-${index}`}
               value={product.rating}
-              precision={0.1} // Ajusta según sea necesario (0.1 para mostrar décimas de estrella)
+              precision={0.1} // Adjust as needed (0.1 to show tenths of a star)
               readOnly
               size="small"
               className="productRating"

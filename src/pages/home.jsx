@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import '../sass/homestyle.css'; // Importa los estilos CSS
+import '../css/homestyle.css';
 import Navbar from '../components/navbar';
 import Products from '../components/products';
 import Header from '../components/header';
 import StaticExample from '../components/modal';
 
 function Home() {
-  const [showModal, setShowModal] = useState(true); // Estado para controlar la visibilidad del modal
+  const [showModal, setShowModal] = useState(true); // State to control the visibility of the modal
 
   const closeModal = () => {
     setShowModal(false);

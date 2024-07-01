@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import '../sass/homestyle.css'
+import '../css/homestyle.css';
 
 function StaticExample({ onClose }) {
+  // State to control the visibility of the modal
   const [show, setShow] = useState(false);
 
   useEffect(() => {
+    // Show the modal when the component is mounted
     setShow(true);
   }, []);
 
